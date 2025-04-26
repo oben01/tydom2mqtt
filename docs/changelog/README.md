@@ -1,5 +1,8 @@
 # Changelog
 
+# 3.6.1
+- :bug: fix support for garage door
+
 # 3.6.0
 - :star: Add support for garage door
 

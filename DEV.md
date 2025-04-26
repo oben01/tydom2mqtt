@@ -1,5 +1,15 @@
 ## Developer guide
 
+### create a virtual env 
+
+```bash
+python3 -m venv .venv
+```
+
+```bash
+source .venv/bin/activate
+```
+
 ### Get the dependencies & the dev dependencies
 ```bash
 cd app && pip install -r requirements.txt -r requirements.dev.txt

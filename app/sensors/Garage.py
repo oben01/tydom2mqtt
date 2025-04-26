@@ -119,13 +119,13 @@ class Garage:
                 await new_sensor.update()
 
     async def put_garage_position(tydom_client, device_id, cover_id, position):
-        logger.info("%s %s %s", cover_id, "level", position)
+        logger.info("%s %s %s", cover_id, "position", position)
         if not (position == ""):
-            await tydom_client.put_devices_data(device_id, cover_id, "level", position)
+            await tydom_client.put_devices_data(device_id, cover_id, "position", position)
 
     async def put_garage_positionCmd(tydom_client, device_id, cover_id, positionCmd):
-        logger.info("%s %s %s", cover_id, "levelCmd", positionCmd)
+        logger.info("%s %s %s", cover_id, "positionCmd", positionCmd)
         if not (positionCmd == ""):
             await tydom_client.put_devices_data(
-                device_id, cover_id, "levelCmd", positionCmd
+                device_id, cover_id, "positionCmd", positionCmd
             )
